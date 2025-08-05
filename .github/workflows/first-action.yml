@@ -8,3 +8,9 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done --bye!"
+      - name: Update Lib
+        run: apt update
+      - name: install net-tools
+        run: apt install -y net-tools
+      - name: print IP
+        run: ifconfig
