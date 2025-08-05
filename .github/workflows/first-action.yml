@@ -8,6 +8,10 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done --bye!"
+      - name: Multi-Line Shell Commands
+        run: |
+            echo "First Output"
+            echo "Second Output"
       - name: Update Lib
         run: sudo apt update
       - name: install net-tools
