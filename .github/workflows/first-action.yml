@@ -9,8 +9,8 @@ jobs:
       - name: Print goodbye
         run: echo "Done --bye!"
       - name: Update Lib
-        run: apt update
+        run: sudo apt update
       - name: install net-tools
-        run: apt install -y net-tools
+        run: sudo apt install -y net-tools
       - name: print IP
         run: ifconfig
